@@ -1,0 +1,34 @@
+Oct 05 11:58 : exception: Failed to open /home/michael/.config/mpd/state: No such file or directory
+Oct 05 11:58 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 05 11:58 : client: [0] opened from 127.0.0.1:48696
+Oct 05 12:11 : client: [0] closed
+Oct 05 12:11 : client: [1] opened from 127.0.0.1:48912
+Oct 05 12:13 : client: [1] closed
+Oct 05 12:13 : client: [2] opened from 127.0.0.1:48938
+Oct 05 12:14 : client: [2] closed
+Oct 05 12:14 : client: [3] opened from 127.0.0.1:48940
+Oct 05 12:18 : client: [3] closed
+Oct 05 12:18 : client: [4] opened from 127.0.0.1:48990
+Oct 05 12:20 : client: [4] closed
+Oct 05 12:20 : client: [5] opened from 127.0.0.1:48996
+Oct 05 12:25 : client: [5] closed
+Oct 05 12:25 : client: [6] opened from 127.0.0.1:49316
+Oct 05 13:36 : client: [6] closed
+Oct 05 13:36 : client: [7] opened from 127.0.0.1:50716
+Oct 05 15:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 05 15:06 : client: [0] opened from 127.0.0.1:40976
+Oct 05 15:06 : client: [0] closed
+Oct 05 15:07 : client: [1] opened from 127.0.0.1:40980
+Oct 05 15:08 : client: [1] closed
+Oct 05 15:08 : client: [2] opened from 127.0.0.1:40992
+Oct 05 15:08 : client: [2] closed
+Oct 05 15:08 : client: [3] opened from 127.0.0.1:40994
+Oct 05 15:10 : client: [3] closed
+Oct 05 15:10 : client: [4] opened from 127.0.0.1:41004
+Oct 05 15:10 : client: [4] closed
+Oct 05 15:10 : client: [5] opened from 127.0.0.1:41022
+Oct 05 15:13 : client: [5] closed
+Oct 05 15:13 : client: [6] opened from 127.0.0.1:41034
+Oct 05 15:13 : client: [6] closed
+Oct 05 15:14 : client: [7] opened from 127.0.0.1:41038
+Oct 05 15:16 : client: [7] closed
