@@ -163,12 +163,22 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
+workspace_auto_back_and_forth yes
 #===============指定程序打开后出现在指定工作区===============
 assign [class="chrome"] $ws2
 assign [class ="code"] $ws3
 assign [class="Youdao-Note-Electron"] $ws4
+#assign [class="URxvt" instance="tty-clock"] $ws3
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
+for_window [title="File Manager$"] floating enable 
+for_window [title="Music$"] floating enable 
+for_window [title="urxvt"] border none
+for_window [title="mpv"] border none
+for_window [title="Chrome$"] border none
+for_window [title="OSS$"] border none
+#default_border  none
+floating_maximum_size 800 x 800
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -203,10 +213,10 @@ mode "resize" {
 
 gaps inner 4
 gaps outer 2
-smart_gaps on
+#smart_gaps on
 # custom
 # bindsym Mod4+l exec --no-startup-id i3lock -i '/home/michael/Downloads/timg.jpeg'
-bindsym Mod4+e exec --no-startup-id urxvt -e ranger
+bindsym Mod4+e exec --no-startup-id Thunar
 bindsym Mod4+l exec betterlockscreen -l dim
 bindsym Print exec --no-startup-id shutter -f -C -e -o ~/Pictures/shot/%Y-%m-%d-%T.png
 bindsym Mod4+Print exec shutter -s -e -C -o ~/Pictures/shot/%Y-%m-%d-%T.png  
@@ -219,11 +229,15 @@ bindsym $mod+x scratchpad show
 bindsym $mod+Shift+i exec --no-startup-id urxvt -e sudo -E vim ~/.config/i3/config
 bindsym $mod+y exec --no-startup-id /opt/Youdao-Note-Electron-linux-x64/Youdao-Note-Electron
 bindsym $mod+t exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh -u
-bindsym --release  $mod+Ctrl+a exec --no-startup-id  " shutter -s -e -C -o /tmp/screenshot.png  && xclip -selection clipoard -t 'image/png' /tmp/screenshot.png"
-bindsym Ctrl+$mod+Delete exec --no-startup-id gnome-system-monitor floating toggle  
+bindsym $mod+Ctrl+a exec --no-startup-id  " shutter -s -e -C -o /tmp/screenshot.png  && xclip -selection clipoard -t 'image/png' /tmp/screenshot.png"
+bindsym Ctrl+$mod+Delete exec --no-startup-id gnome-system-monitor  
 
 bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id conky
+exec --no-startup-id xrandr --output LVDS-1 --primary
+exec --no-startup-id dunst
+#exec --no-startup-id urxvt -name tty-clock -e tty-clock -C 2 -c -d 20000000000
+#exec_always --no-startup-id  i3-msg "exec urxvt -e tty-clock -C 2 -c -d 2000000000;exec htop"
 #exec --no-startup-id xfce4-panel --disable-wm-check
