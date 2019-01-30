@@ -69,6 +69,7 @@ plugins=(
   shell
   npm
   node
+  archlinux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -101,7 +102,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 #alias zshconfig="mate ~/.zshrc"
 #alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll='ls -l'
+
+PATH="$HOME/.node_modules/bin:$PATH"
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+export npm_config_prefix=~/.node_modules
+
+alias ll='ls -lh'
 alias lal='ls -al'
 alias svi='sudo vim'
 alias grep='grep --color=auto'
