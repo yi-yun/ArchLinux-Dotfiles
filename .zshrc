@@ -118,4 +118,4 @@ alias findProc='ps -ef | grep '
 alias docker='sudo docker '
 alias cls='printf "\033c"'
 alias query='sudo pacman -Ss'
-
+alias ci='git commit -amv'
