@@ -115,7 +115,6 @@ alias install='sudo pacman -S'
 alias remove='sudo pacman -Rcn'
 alias upgrade='sudo pacman -Syu'
 alias findProc='ps -ef | grep '
-alias docker='sudo docker '
 alias cls='printf "\033c"'
 alias query='sudo pacman -Ss'
 alias pc='proxychains4'
@@ -123,3 +122,5 @@ alias ci='git ci'
 alias getip="curl ip.sb"
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
 alias unsetproxy="unset ALL_PROXY"
+alias ..='cd ..'
+alias .='cd ~'
