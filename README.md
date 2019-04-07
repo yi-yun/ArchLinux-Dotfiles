@@ -10,4 +10,4 @@
 ## KDE
 
 <!-- ![](https://yiyun-1253940215.cos.ap-shanghai.myqcloud.com/20190407202337.png) -->
-<img src="https://yiyun-1253940215.cos.ap-shanghai.myqcloud.com/20190407202337.png"/>
+<img src="https://yiyun-1253940215.cos.ap-shanghai.myqcloud.com/20190407202337.png" width="60%"/>
