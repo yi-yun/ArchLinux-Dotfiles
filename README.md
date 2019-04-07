@@ -5,7 +5,7 @@
 
 ## i3-gaps
 
-![](https://yiyun-1253940215.cos.ap-shanghai.myqcloud.com/20190407202338.PNG)
+![](img/IMG_6013.PNG)
 
 ## KDE
 
